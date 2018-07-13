@@ -9,6 +9,7 @@ STEP1:
 cd /your/domain/directory/
 wget 'https://github.com/disco-v8/DirectEdit/archive/master.zip' -O DirectEdit-master.zip
 unzip ./DirectEdit-master.zip
+chmod 700 ./*.php
 
 STEP2:
 edit "txtedit.conf".

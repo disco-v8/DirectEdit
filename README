@@ -11,6 +11,7 @@ wget 'https://github.com/disco-v8/DirectEdit/archive/master.zip' -O DirectEdit-m
 unzip ./DirectEdit-master.zip
 cd /your/domain/directory/DirectEdit-master/
 chmod 700 ./*.php
+chmod 600 ./*.conf
 
 STEP2:
 edit "txtedit.conf".

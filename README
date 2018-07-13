@@ -9,6 +9,7 @@ STEP1:
 cd /your/domain/directory/
 wget 'https://github.com/disco-v8/DirectEdit/archive/master.zip' -O DirectEdit-master.zip
 unzip ./DirectEdit-master.zip
+cd /your/domain/directory/DirectEdit-master/
 chmod 700 ./*.php
 
 STEP2:
@@ -20,8 +21,8 @@ edit "txtedit.conf".
 STEP3:
 certbot certonly --manual \
 --preferred-challenges=dns \
---manual-auth-hook /your/domain/directory/txtregist.php \
---manual-cleanup-hook /your/domain/directory/txtdelete.php \
+--manual-auth-hook /your/domain/directory/DirectEdit-master/txtregist.php \
+--manual-cleanup-hook /your/domain/directory/DirectEdit-master/txtdelete.php \
 -d yourdomain -d *.yourdomain \
 --server https://acme-v02.api.letsencrypt.org/directory \
 --agree-tos -m yourmailaddr \
